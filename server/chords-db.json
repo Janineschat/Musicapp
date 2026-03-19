@@ -1,0 +1,20 @@
+{
+  "Wonderwall": {
+    "artist": "Oasis",
+    "key": "F#m",
+    "capo": 2,
+    "content": "Em7 G Dsus4 A7sus4\n\n[Intro]\nEm7 G Dsus4 A7sus4\n\n[Verse 1]\nEm7          G\nToday is gonna be the day\nDsus4         A7sus4\nThat they're gonna throw it back to you\nEm7          G\nBy now you should've somehow\nDsus4         A7sus4\nRealised what you gotta do\n\n[Pre-Chorus]\nEm7          G\nI don't believe that anybody\nDsus4         A7sus4\nFeels the way I do about you now\n\n[Chorus]\nEm7     G      Dsus4    A7sus4\nBackbeat the word was on the street\nEm7     G      Dsus4    A7sus4\nThat fire in your heart is out\nEm7     G      Dsus4    A7sus4\nI'm sure you've heard it all before\nEm7     G      Dsus4    A7sus4\nBut you never really had a doubt\nEm7     G      Dsus4    A7sus4\nI don't believe that anybody\nEm7     G      Dsus4    A7sus4\nFeels the way I do about you now"
+  },
+  "Hotel California": {
+    "artist": "Eagles",
+    "key": "Am",
+    "capo": 0,
+    "content": "Am E G D F C Dm E\n\n[Intro]\nAm E G D F C Dm E\n\n[Verse 1]\nAm         E\nOn a dark desert highway\nG          D\nCool wind in my hair\nF          C\nWarm smell of colitas\nDm         E\nRising up through the air\n\n[Chorus]\nF         C\nWelcome to the Hotel California\nE         Am\nSuch a lovely place (such a lovely place)\nF         C\nSuch a lovely face\nE         Am\nPlenty of room at the Hotel California\nDm        E\nAny time of year (any time of year)\nF         C\nYou can find it here"
+  },
+  "Stairway to Heaven": {
+    "artist": "Led Zeppelin",
+    "key": "Am",
+    "capo": 0,
+    "content": "Am G F G Am\n\n[Intro]\nAm G F G Am\n\n[Verse 1]\nAm                G\nThere's a lady who's sure\nF               G\nAll that glitters is gold\nAm                G\nAnd she's buying a stairway to heaven\nF               G\nWhen she gets there she knows\n\n[Chorus]\nAm     G     F     G\nAnd she's buying a stairway to heaven\nAm     G     F     G\nThere's a sign on the wall\nAm     G     F     G\nBut she wants to be sure\nAm     G     F     G\n'Cause you know sometimes words have two meanings"
+  }
+}

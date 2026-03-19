@@ -1,0 +1,17 @@
+{
+  "name": "music-chord-finder",
+  "version": "1.0.0",
+  "description": "A modern fullstack web app for recognizing music and displaying guitar chords",
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["music", "chords", "react", "express", "audio-recognition"],
+  "author": "",
+  "license": "MIT"
+}
