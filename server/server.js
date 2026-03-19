@@ -1,8 +1,9 @@
-const express = require('express');
-const cors = require('cors');
-const multer = require('multer');
-const path = require('path');
-const recognizeRoute = require('./routes/recognize');
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
+const multer = require("multer");
+const path = require("path");
+const recognizeRoute = require("./routes/recognize");
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -20,32 +21,34 @@ const upload = multer({
   },
   fileFilter: (req, file, cb) => {
     // Accept audio files
-    if (file.mimetype.startsWith('audio/')) {
+    if (file.mimetype.startsWith("audio/")) {
       cb(null, true);
     } else {
-      cb(new Error('Only audio files are allowed'));
+      cb(new Error("Only audio files are allowed"));
     }
-  }
+  },
 });
 
 // Routes
-app.use('/api', recognizeRoute);
+app.use("/api", recognizeRoute);
 
 // Health check
-app.get('/health', (req, res) => {
-  res.json({ status: 'OK', message: 'Music Chord Finder API is running' });
+app.get("/health", (req, res) => {
+  res.json({ status: "OK", message: "Music Chord Finder API is running" });
 });
 
 // Error handling middleware
 app.use((error, req, res, next) => {
   if (error instanceof multer.MulterError) {
-    if (error.code === 'LIMIT_FILE_SIZE') {
-      return res.status(400).json({ error: 'File too large. Max size is 10MB.' });
+    if (error.code === "LIMIT_FILE_SIZE") {
+      return res
+        .status(400)
+        .json({ error: "File too large. Max size is 10MB." });
     }
   }
 
-  console.error('Server error:', error);
-  res.status(500).json({ error: 'Internal server error' });
+  console.error("Server error:", error);
+  res.status(500).json({ error: "Internal server error" });
 });
 
 app.listen(PORT, () => {

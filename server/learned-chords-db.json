@@ -1,0 +1,197 @@
+{
+  "songs": {
+    "hotel california__eagles": {
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "chords": {
+        "key": "Am",
+        "capo": 0,
+        "content": "Am E G D F C Dm E\n\n[Intro]\nAm E G D F C Dm E\n\n[Verse 1]\nAm         E\nOn a dark desert highway\nG          D\nCool wind in my hair\nF          C\nWarm smell of colitas\nDm         E\nRising up through the air\n\n[Chorus]\nF         C\nWelcome to the Hotel California\nE         Am\nSuch a lovely place (such a lovely place)\nF         C\nSuch a lovely face\nE         Am\nPlenty of room at the Hotel California\nDm        E\nAny time of year (any time of year)\nF         C\nYou can find it here",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "On a dark desert highway, cool wind in my hair\nWarm smell of colitas, rising up through the air\nUp ahead in the distance, I saw a shimmering light\nMy head grew heavy and my sight grew dimmer\nI had to stop for the night.\nThere she stood in the doorway;",
+        "sourceUrl": "https://www.google.com/search?q=Eagles%20Hotel%20California%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Eagles%20Hotel%20California%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Hotel%20California"
+      },
+      "updatedAt": "2026-03-19T11:35:05.653Z"
+    },
+    "stairway to heaven__led zeppelin": {
+      "title": "Stairway to Heaven",
+      "artist": "Led Zeppelin",
+      "chords": {
+        "key": "Am",
+        "capo": 0,
+        "content": "Am G F G Am\n\n[Intro]\nAm G F G Am\n\n[Verse 1]\nAm                G\nThere's a lady who's sure\nF               G\nAll that glitters is gold\nAm                G\nAnd she's buying a stairway to heaven\nF               G\nWhen she gets there she knows\n\n[Chorus]\nAm     G     F     G\nAnd she's buying a stairway to heaven\nAm     G     F     G\nThere's a sign on the wall\nAm     G     F     G\nBut she wants to be sure\nAm     G     F     G\n'Cause you know sometimes words have two meanings",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "There's a lady who's sure all that glitters is gold\nAnd she's buying a stairway to heaven\nWhen she gets there she knows, if the stores are all closed\nWith a word she can get what she came for\nOoh, ooh, and she's buying a stairway to heaven\nThere's a sign on the wall but she wants to be sure",
+        "sourceUrl": "https://www.google.com/search?q=Led%20Zeppelin%20Stairway%20to%20Heaven%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Led%20Zeppelin%20Stairway%20to%20Heaven%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Stairway%20to%20Heaven"
+      },
+      "updatedAt": "2026-03-19T12:44:57.805Z"
+    },
+    "wonderwall__oasis": {
+      "title": "Wonderwall",
+      "artist": "Oasis",
+      "chords": {
+        "key": "F#m",
+        "capo": 2,
+        "content": "Em7 G Dsus4 A7sus4\n\n[Intro]\nEm7 G Dsus4 A7sus4\n\n[Verse 1]\nEm7          G\nToday is gonna be the day\nDsus4         A7sus4\nThat they're gonna throw it back to you\nEm7          G\nBy now you should've somehow\nDsus4         A7sus4\nRealised what you gotta do\n\n[Pre-Chorus]\nEm7          G\nI don't believe that anybody\nDsus4         A7sus4\nFeels the way I do about you now\n\n[Chorus]\nEm7     G      Dsus4    A7sus4\nBackbeat the word was on the street\nEm7     G      Dsus4    A7sus4\nThat fire in your heart is out\nEm7     G      Dsus4    A7sus4\nI'm sure you've heard it all before\nEm7     G      Dsus4    A7sus4\nBut you never really had a doubt\nEm7     G      Dsus4    A7sus4\nI don't believe that anybody\nEm7     G      Dsus4    A7sus4\nFeels the way I do about you now",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "Today is gonna be the day\nThat they're gonna throw it back to you\nBy now you should've somehow\nRealized what you gotta do\nI don't believe that anybody\nFeels the way I do about you now",
+        "sourceUrl": "https://www.google.com/search?q=Oasis%20Wonderwall%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Oasis%20Wonderwall%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Wonderwall"
+      },
+      "updatedAt": "2026-03-19T11:42:38.410Z"
+    },
+    "sparks__coldplay": {
+      "title": "Sparks",
+      "artist": "Coldplay",
+      "chords": {
+        "key": "Unknown",
+        "capo": 0,
+        "content": "[Starter progression]\nC Em Am G F\n\n[Note]\nStarter chart saved.",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "I know what you'll say,\nYou say, oh, sing one we know,\nBut I promise you this,\nI'll always look out for you,\nThat's what I'll do.\nI say oh,, I say oh.",
+        "sourceUrl": "https://www.google.com/search?q=Coldplay%20Sparks%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Coldplay%20Sparks%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Sparks"
+      },
+      "updatedAt": "2026-03-19T12:02:20.582Z"
+    },
+    "2026 - 03 - 19t12 - 26 - 17 - 870z__recording": {
+      "title": "2026 - 03 - 19T12 - 26 - 17 - 870Z",
+      "artist": "recording",
+      "chords": null,
+      "lyrics": {
+        "available": false,
+        "preview": null,
+        "sourceUrl": "https://www.google.com/search?q=recording%202026%20-%2003%20-%2019T12%20-%2026%20-%2017%20-%20870Z%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=recording%202026%20-%2003%20-%2019T12%20-%2026%20-%2017%20-%20870Z%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=2026%20-%2003%20-%2019T12%20-%2026%20-%2017%20-%20870Z"
+      },
+      "updatedAt": "2026-03-19T12:26:35.765Z"
+    },
+    "2026 - 03 - 19t12 - 27 - 52 - 389z__recording": {
+      "title": "2026 - 03 - 19T12 - 27 - 52 - 389Z",
+      "artist": "recording",
+      "chords": null,
+      "lyrics": {
+        "available": false,
+        "preview": null,
+        "sourceUrl": "https://www.google.com/search?q=recording%202026%20-%2003%20-%2019T12%20-%2027%20-%2052%20-%20389Z%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=recording%202026%20-%2003%20-%2019T12%20-%2027%20-%2052%20-%20389Z%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=2026%20-%2003%20-%2019T12%20-%2027%20-%2052%20-%20389Z"
+      },
+      "updatedAt": "2026-03-19T12:28:11.021Z"
+    },
+    "2026 - 03 - 19t12 - 31 - 47 - 506z__recording": {
+      "title": "2026 - 03 - 19T12 - 31 - 47 - 506Z",
+      "artist": "recording",
+      "chords": null,
+      "lyrics": {
+        "available": false,
+        "preview": null,
+        "sourceUrl": "https://www.google.com/search?q=recording%202026%20-%2003%20-%2019T12%20-%2031%20-%2047%20-%20506Z%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=recording%202026%20-%2003%20-%2019T12%20-%2031%20-%2047%20-%20506Z%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=2026%20-%2003%20-%2019T12%20-%2031%20-%2047%20-%20506Z"
+      },
+      "updatedAt": "2026-03-19T12:31:58.320Z"
+    },
+    "she will be loved (radio edit)__maroon 5": {
+      "title": "She Will Be Loved (Radio Edit)",
+      "artist": "Maroon 5",
+      "chords": null,
+      "lyrics": {
+        "available": true,
+        "preview": "Beauty queen of only eighteen\nShe had some trouble with herself\nHe was always there to help her\nShe always belonged to someone else\nI drove for miles and miles\nAnd wound up at your door",
+        "sourceUrl": "https://www.google.com/search?q=Maroon%205%20She%20Will%20Be%20Loved%20(Radio%20Edit)%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Maroon%205%20She%20Will%20Be%20Loved%20(Radio%20Edit)%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=She%20Will%20Be%20Loved%20(Radio%20Edit)"
+      },
+      "updatedAt": "2026-03-19T12:41:43.727Z"
+    },
+    "can't help falling in love__elvis presley": {
+      "title": "Can't Help Falling in Love",
+      "artist": "Elvis Presley",
+      "chords": {
+        "key": "Unknown",
+        "capo": 0,
+        "content": "[Starter progression]\nC Em Am F C G\n\n[Note]\nStarter chart saved.",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "Wise men say\n\"Only fools rush in\"\nBut I can't help\nFalling in love with you\nShall I stay?\nWould it be a sin",
+        "sourceUrl": "https://www.google.com/search?q=Elvis%20Presley%20Can't%20Help%20Falling%20in%20Love%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Elvis%20Presley%20Can't%20Help%20Falling%20in%20Love%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Can't%20Help%20Falling%20in%20Love"
+      },
+      "updatedAt": "2026-03-19T12:43:14.433Z"
+    },
+    "the a team__ed sheeran": {
+      "title": "The A Team",
+      "artist": "Ed Sheeran",
+      "chords": {
+        "key": "Unknown",
+        "capo": 0,
+        "content": "[Starter progression]\nG C Em D\n\n[Note]\nStarter chart saved.",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "White lips, pale face\nBreathing in snowflakes\nBurnt lungs, sour taste\nLight's gone, day's end\nStruggling to pay rent\nLong nights, strange men",
+        "sourceUrl": "https://www.google.com/search?q=Ed%20Sheeran%20The%20A%20Team%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Ed%20Sheeran%20The%20A%20Team%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=The%20A%20Team"
+      },
+      "updatedAt": "2026-03-19T12:44:04.720Z"
+    }
+  },
+  "fingerprints": {
+    "538791c9314d4d546df35c553040817572b750ee": "hotel california__eagles",
+    "c181e180d1edfe38043b61c94dbd463d08693fa4": "stairway to heaven__led zeppelin",
+    "a432f40a4054a7c5c4b565c507582c9802b17f38": "wonderwall__oasis",
+    "35e25d50f07203d5c6cf674ffad547ea73b36827": "sparks__coldplay",
+    "11ad6d982e10cdfe16f44c82d9ed84840000dc40": "2026 - 03 - 19t12 - 26 - 17 - 870z__recording",
+    "0230e70ca1a079087ed8c27f8f6973881724622f": "2026 - 03 - 19t12 - 27 - 52 - 389z__recording",
+    "a4be2ef5d4e76b8d53da28182e159244debf151c": "2026 - 03 - 19t12 - 31 - 47 - 506z__recording",
+    "b4197c9d1f34e5bb1bea9897720cde1f1bcc0998": "she will be loved (radio edit)__maroon 5",
+    "d68bf3296a3492cd2309233041499b889afa9b03": "can't help falling in love__elvis presley",
+    "25dea19cc7668fabd13b84fd76134712e7be8c9f": "the a team__ed sheeran",
+    "5f8ebc5b49e12de84fc819e3c36a83d65549657c": "stairway to heaven__led zeppelin"
+  }
+}

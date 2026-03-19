@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef } from "react";
 
 const Recorder = ({ onAudioReady, isProcessing }) => {
   const [isRecording, setIsRecording] = useState(false);
@@ -7,45 +7,85 @@ const Recorder = ({ onAudioReady, isProcessing }) => {
   const mediaRecorderRef = useRef(null);
   const chunksRef = useRef([]);
 
+  const getRecorderConfig = () => {
+    const highQualityBitsPerSecond = 256000;
+
+    if (MediaRecorder.isTypeSupported("audio/webm;codecs=opus")) {
+      return {
+        mimeType: "audio/webm;codecs=opus",
+        extension: "webm",
+        options: {
+          mimeType: "audio/webm;codecs=opus",
+          audioBitsPerSecond: highQualityBitsPerSecond,
+        },
+      };
+    }
+
+    if (MediaRecorder.isTypeSupported("audio/ogg;codecs=opus")) {
+      return {
+        mimeType: "audio/ogg;codecs=opus",
+        extension: "ogg",
+        options: {
+          mimeType: "audio/ogg;codecs=opus",
+          audioBitsPerSecond: highQualityBitsPerSecond,
+        },
+      };
+    }
+
+    return {
+      mimeType: "audio/webm",
+      extension: "webm",
+      options: { audioBitsPerSecond: highQualityBitsPerSecond },
+    };
+  };
+
   const startRecording = async () => {
-    console.log('Starting recording...');
+    console.log("Starting recording...");
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      console.log('Got stream:', stream);
-      const mediaRecorder = new MediaRecorder(stream);
+      console.log("Got stream:", stream);
+      const recorderConfig = getRecorderConfig();
+      const mediaRecorder = new MediaRecorder(stream, recorderConfig.options);
       mediaRecorderRef.current = mediaRecorder;
       chunksRef.current = [];
 
       mediaRecorder.ondataavailable = (event) => {
-        console.log('Data available:', event.data.size);
+        console.log("Data available:", event.data.size);
         if (event.data.size > 0) {
           chunksRef.current.push(event.data);
         }
       };
 
       mediaRecorder.onstop = () => {
-        console.log('Recording stopped, chunks:', chunksRef.current.length);
-        const blob = new Blob(chunksRef.current, { type: 'audio/wav' });
+        console.log("Recording stopped, chunks:", chunksRef.current.length);
+        const blob = new Blob(chunksRef.current, {
+          type: recorderConfig.mimeType,
+        });
         const url = URL.createObjectURL(blob);
+        const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+        const filename = `recording-${stamp}.${recorderConfig.extension}`;
         setAudioBlob(blob);
         setAudioUrl(url);
-        onAudioReady(blob);
+        onAudioReady({ blob, filename });
 
         // Stop all tracks
-        stream.getTracks().forEach(track => track.stop());
+        stream.getTracks().forEach((track) => track.stop());
       };
 
       mediaRecorder.start();
       setIsRecording(true);
-      console.log('Recording started');
+      console.log("Recording started");
     } catch (error) {
-      console.error('Error starting recording:', error);
-      alert('Could not access microphone. Please check permissions.');
+      console.error("Error starting recording:", error);
+      alert("Could not access microphone. Please check permissions.");
     }
   };
 
   const stopRecording = () => {
-    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
+    if (
+      mediaRecorderRef.current &&
+      mediaRecorderRef.current.state !== "inactive"
+    ) {
       mediaRecorderRef.current.stop();
       setIsRecording(false);
     }
@@ -53,13 +93,13 @@ const Recorder = ({ onAudioReady, isProcessing }) => {
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
-    if (file && file.type.startsWith('audio/')) {
+    if (file && file.type.startsWith("audio/")) {
       const url = URL.createObjectURL(file);
       setAudioBlob(file);
       setAudioUrl(url);
-      onAudioReady(file);
+      onAudioReady({ blob: file, filename: file.name });
     } else {
-      alert('Please select a valid audio file.');
+      alert("Please select a valid audio file.");
     }
   };
 
@@ -73,7 +113,9 @@ const Recorder = ({ onAudioReady, isProcessing }) => {
 
   return (
     <div className="bg-gray-800 rounded-lg p-6 w-full max-w-md">
-      <h2 className="text-xl font-bold text-white mb-4">Record or Upload Audio</h2>
+      <h2 className="text-xl font-bold text-white mb-4">
+        Record or Upload Audio
+      </h2>
 
       {/* Recording Controls */}
       <div className="mb-4">
@@ -98,7 +140,9 @@ const Recorder = ({ onAudioReady, isProcessing }) => {
 
         {/* File Upload */}
         <div className="mb-4">
-          <label className="block text-sm text-gray-300 mb-2">Or upload an audio file:</label>
+          <label className="block text-sm text-gray-300 mb-2">
+            Or upload an audio file:
+          </label>
           <input
             type="file"
             accept="audio/*"
@@ -112,12 +156,10 @@ const Recorder = ({ onAudioReady, isProcessing }) => {
       {/* Audio Preview */}
       {audioUrl && (
         <div className="mb-4">
-          <label className="block text-sm text-gray-300 mb-2">Audio Preview:</label>
-          <audio
-            controls
-            src={audioUrl}
-            className="w-full"
-          />
+          <label className="block text-sm text-gray-300 mb-2">
+            Audio Preview:
+          </label>
+          <audio controls src={audioUrl} className="w-full" />
         </div>
       )}
 
