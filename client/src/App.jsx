@@ -105,7 +105,7 @@ function App() {
     <div className="min-h-screen flex flex-col items-center justify-start p-4">
       <div className="main-container max-w-4xl w-full mt-8">
         <div className="text-center mb-8">
-          <h1 className="text-6xl font-extrabold mb-2" style={{ color: '#4b6c57' }}>
+          <h1 className="app-title text-6xl mb-2" style={{ color: '#4b6c57' }}>
             Music Chord Finder
           </h1>
           <p style={{ color: '#4b6c57' }}>
