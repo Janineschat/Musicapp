@@ -175,6 +175,20 @@ const Recorder = ({ onAudioReady, isProcessing, onRecognize }) => {
           {isProcessing && "🔍 Recognizing..."}
           {!isRecording && !isProcessing && "Click to record"}
         </p>
+
+        {/* Upload audio file button */}
+        <label className="mt-2 inline-flex items-center px-4 py-2 bg-[#e3ede1] hover:bg-[#d2e3d0] border border-[#b7cbb2] text-[#2d3a2e] rounded-lg cursor-pointer transition-all duration-200 shadow-sm">
+          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+          </svg>
+          Upload audio bestand
+          <input
+            type="file"
+            accept="audio/*"
+            onChange={handleFileUpload}
+            className="hidden"
+          />
+        </label>
       </div>
     </div>
   );

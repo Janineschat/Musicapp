@@ -1,4 +1,5 @@
 import React from "react";
+import GuitarChordDiagram from "./GuitarChordDiagram";
 
 const ResultModal = ({
   isOpen,
@@ -34,13 +35,8 @@ const ResultModal = ({
             </div>
           ) : song ? (
             <div className="space-y-4">
-              {/* Song Info */}
+              {/* Song Info (no album art) */}
               <div className="flex items-center space-x-4">
-                <img
-                  src={song.albumArt}
-                  alt={`${song.title} album art`}
-                  className="w-20 h-20 rounded-lg object-cover"
-                />
                 <div>
                   <h3 className="text-xl font-semibold text-white">
                     {song.title}
@@ -58,6 +54,18 @@ const ResultModal = ({
                   )}
                 </div>
               </div>
+
+              {/* Show large guitar with all chord diagrams if chords exist */}
+              {chords && chords.content && (
+                <div className="flex flex-wrap gap-6 justify-center items-center my-6">
+                  {chords.content.split(/\s*[-,]\s*/).map((chord, idx) =>
+                    <div key={chord + idx} className="flex flex-col items-center">
+                      <GuitarChordDiagram chord={chord.trim()} />
+                      <span className="text-white mt-2 text-base font-semibold">{chord.trim()}</span>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {learning && (
                 <div className="bg-slate-700 rounded-lg p-3 text-sm text-slate-100">
@@ -88,6 +96,12 @@ const ResultModal = ({
                         {chords.source || "unknown"}
                       </span>
                     </span>
+                  </div>
+                  {/* Guitar chord diagrams */}
+                  <div className="flex flex-wrap gap-4 mb-2">
+                    {chords.content && chords.content.split(/\s*[-,]\s*/).map((chord, idx) =>
+                      <GuitarChordDiagram chord={chord.trim()} key={chord + idx} />
+                    )}
                   </div>
                   <pre className="text-green-400 whitespace-pre-wrap font-mono text-sm bg-gray-900 p-3 rounded border">
                     {chords.content}

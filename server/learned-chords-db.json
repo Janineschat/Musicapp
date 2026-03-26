@@ -58,7 +58,7 @@
         "searchUrl": "https://www.google.com/search?q=Oasis%20Wonderwall%20chords",
         "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Wonderwall"
       },
-      "updatedAt": "2026-03-26T12:32:43.807Z"
+      "updatedAt": "2026-03-26T13:09:28.381Z"
     },
     "sparks__coldplay": {
       "title": "Sparks",
@@ -294,6 +294,46 @@
         "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Say%20You%20Won't%20Let%20Go%20(Violin%20Remix)"
       },
       "updatedAt": "2026-03-26T11:55:55.582Z"
+    },
+    "she will be loved__maroon 5": {
+      "title": "She Will Be Loved",
+      "artist": "Maroon 5",
+      "chords": {
+        "key": "Unknown",
+        "capo": 0,
+        "content": "[Starter progression]\nC G Am F\n\n[Note]\nStarter chart saved.",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "Beauty queen of only eighteen\nShe had some trouble with herself\nHe was always there to help her\nShe always belonged to someone else\nI drove for miles and miles\nAnd wound up at your door",
+        "sourceUrl": "https://www.google.com/search?q=Maroon%205%20She%20Will%20Be%20Loved%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Maroon%205%20She%20Will%20Be%20Loved%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=She%20Will%20Be%20Loved"
+      },
+      "updatedAt": "2026-03-26T13:07:36.706Z"
+    },
+    "i'm yours__jason mraz": {
+      "title": "I'm Yours",
+      "artist": "Jason Mraz",
+      "chords": {
+        "key": "Unknown",
+        "capo": 0,
+        "content": "[Starter progression]\nB F# G#m E\n\n[Note]\nStarter chart saved.",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "Well, you done done me in, you bet I felt it\nI tried to be chill, but you're so hot that I melted\nI fell right through the cracks\nNow, I'm trying to get back\nBefore the cool done run out, I'll be giving it my bestest\nAnd nothing's gonna stop me but divine intervention",
+        "sourceUrl": "https://www.google.com/search?q=Jason%20Mraz%20I'm%20Yours%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Jason%20Mraz%20I'm%20Yours%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=I'm%20Yours"
+      },
+      "updatedAt": "2026-03-26T13:09:39.285Z"
     }
   },
   "fingerprints": {
@@ -318,6 +358,9 @@
     "9c9592f9a0e606bf822837bae0eea601513f4a50": "let it go__passenger",
     "fe5820a609511d4d0eab38a55b7600aa1b4412c7": "say you won't let go (violin remix)__paul lorenz",
     "788a71dd815734658d1f610bb99661331c4182fc": "say you won't let go__james arthur",
-    "bad44f26cabb0f79404e670eb9cc2e6328959962": "wonderwall__oasis"
+    "bad44f26cabb0f79404e670eb9cc2e6328959962": "wonderwall__oasis",
+    "105895a03f70d4c045ee4545ac43d7884af9e866": "she will be loved__maroon 5",
+    "4e2e350cbb57936d7db5131df2fde47390f2ea8c": "wonderwall__oasis",
+    "6d5f1afaa9f11799fd94cff20b7a07f00f1347bb": "i'm yours__jason mraz"
   }
 }
