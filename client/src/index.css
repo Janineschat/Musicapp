@@ -14,7 +14,9 @@ body {
 }
 body {
   margin: 0;
-  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    "Inter", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(120deg, #f6f7f1 60%, #e3ede1 100%);
@@ -26,7 +28,9 @@ code {
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 code {
-  font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+  font-family:
+    "JetBrains Mono", "Fira Mono", "Menlo", "Monaco", "Consolas", "Courier New",
+    monospace;
 }
 
 .main-container {
@@ -75,6 +79,11 @@ code {
   animation: float 2.5s ease-in-out infinite;
 }
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }

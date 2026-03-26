@@ -170,7 +170,7 @@ const Recorder = ({ onAudioReady, isProcessing, onRecognize }) => {
           </div>
         </button>
 
-        <p className="text-blue-200 text-sm h-6 text-center">
+        <p className="text-sm h-6 text-center" style={{ color: !isRecording && !isProcessing ? '#7a9c7e' : '#4b6c57' }}>
           {isRecording && "🔴 Recording... (Click to stop)"}
           {isProcessing && "🔍 Recognizing..."}
           {!isRecording && !isProcessing && "Click to record"}

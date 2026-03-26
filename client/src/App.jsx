@@ -105,10 +105,10 @@ function App() {
     <div className="min-h-screen flex flex-col items-center justify-start p-4">
       <div className="main-container max-w-4xl w-full mt-8">
         <div className="text-center mb-8">
-          <h1 className="text-6xl font-extrabold mb-2" style={{ color: '#38bdf8' }}>
+          <h1 className="text-6xl font-extrabold mb-2" style={{ color: '#4b6c57' }}>
             Music Chord Finder
           </h1>
-          <p className="text-gray-300">
+          <p style={{ color: '#4b6c57' }}>
             Record or upload audio to find song chords instantly
           </p>
         </div>
@@ -151,7 +151,7 @@ function App() {
                 onClick={() => setSelectedSong(song)}
               >
                 <span>{song.title}</span>
-                <span style={{ color: '#7a9c7e', fontSize: '1rem' }}>{song.artist}</span>
+                <span style={{ color: '#4b6c57', fontSize: '1rem' }}>{song.artist}</span>
               </button>
             </li>
           ))}
