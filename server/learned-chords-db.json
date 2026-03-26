@@ -18,7 +18,7 @@
         "searchUrl": "https://www.google.com/search?q=Eagles%20Hotel%20California%20chords",
         "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Hotel%20California"
       },
-      "updatedAt": "2026-03-19T11:35:05.653Z"
+      "updatedAt": "2026-03-19T13:19:41.626Z"
     },
     "stairway to heaven__led zeppelin": {
       "title": "Stairway to Heaven",
@@ -58,7 +58,7 @@
         "searchUrl": "https://www.google.com/search?q=Oasis%20Wonderwall%20chords",
         "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Wonderwall"
       },
-      "updatedAt": "2026-03-19T11:42:38.410Z"
+      "updatedAt": "2026-03-26T12:32:43.807Z"
     },
     "sparks__coldplay": {
       "title": "Sparks",
@@ -178,7 +178,122 @@
         "searchUrl": "https://www.google.com/search?q=Ed%20Sheeran%20The%20A%20Team%20chords",
         "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=The%20A%20Team"
       },
-      "updatedAt": "2026-03-19T12:44:04.720Z"
+      "updatedAt": "2026-03-19T13:20:52.728Z"
+    },
+    "here comes the sun__the beatles": {
+      "title": "Here Comes the Sun",
+      "artist": "The Beatles",
+      "chords": {
+        "key": "Unknown",
+        "capo": 0,
+        "content": "[Starter progression]\nD A7 G D\n\n[Note]\nUpdate this chart via learn endpoint when you add your preferred full version.",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "Here comes the sun, here comes the sun,\nand I say it's all right\nLittle darling, it's been a long cold lonely winter\nLittle darling, it feels like years since it's been here\nHere comes the sun, here comes the sun\nand I say it's all right",
+        "sourceUrl": "https://www.google.com/search?q=The%20Beatles%20Here%20Comes%20the%20Sun%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=The%20Beatles%20Here%20Comes%20the%20Sun%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Here%20Comes%20the%20Sun"
+      },
+      "updatedAt": "2026-03-26T11:21:11.845Z"
+    },
+    "let it be__the beatles": {
+      "title": "Let It Be",
+      "artist": "The Beatles",
+      "chords": {
+        "key": "Unknown",
+        "capo": 0,
+        "content": "[Starter progression]\nC G Am F\n\n[Note]\nStarter chart saved.",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "When I find myself in times of trouble\nMother Mary comes to me\nSpeaking words of wisdom, let it be.\nAnd in my hour of darkness\nShe is standing right in front of me\nSpeaking words of wisdom, let it be.",
+        "sourceUrl": "https://www.google.com/search?q=The%20Beatles%20Let%20It%20Be%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=The%20Beatles%20Let%20It%20Be%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Let%20It%20Be"
+      },
+      "updatedAt": "2026-03-26T11:26:09.175Z"
+    },
+    "say you won't let go__james arthur": {
+      "title": "Say You Won't Let Go",
+      "artist": "James Arthur",
+      "chords": {
+        "key": "Unknown",
+        "capo": 0,
+        "content": "[Starter progression]\nC G Am F\n\n[Note]\nStarter chart saved.",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "I met you in the dark\nYou lit me up\nYou made me feel as though\nI was enough\nWe danced the night away\nWe drank too much",
+        "sourceUrl": "https://www.google.com/search?q=James%20Arthur%20Say%20You%20Won't%20Let%20Go%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=James%20Arthur%20Say%20You%20Won't%20Let%20Go%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Say%20You%20Won't%20Let%20Go"
+      },
+      "updatedAt": "2026-03-26T12:07:16.344Z"
+    },
+    "let it go__passenger": {
+      "title": "Let It Go",
+      "artist": "Passenger",
+      "chords": {
+        "key": "Unknown",
+        "capo": 0,
+        "content": "[Starter progression]\nC G Am F\n\n[Note]\nStarter chart saved.",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": false,
+        "preview": null,
+        "sourceUrl": "https://www.google.com/search?q=Passenger%20Let%20It%20Go%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Passenger%20Let%20It%20Go%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Let%20It%20Go"
+      },
+      "updatedAt": "2026-03-26T11:30:03.673Z"
+    },
+    "waves__dean lewis": {
+      "title": "Waves",
+      "artist": "Dean Lewis",
+      "chords": {
+        "key": "Unknown",
+        "capo": 0,
+        "content": "[Starter progression]\nAm F C G\n\n[Note]\nStarter chart saved.",
+        "source": "seed-db"
+      },
+      "lyrics": {
+        "available": true,
+        "preview": "There is a swelling storm\nAnd I'm caught up in the middle of it all\nAnd it takes control\nOf the person that I thought I was\nThe boy I used to know\nBut there is a light",
+        "sourceUrl": "https://www.google.com/search?q=Dean%20Lewis%20Waves%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Dean%20Lewis%20Waves%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Waves"
+      },
+      "updatedAt": "2026-03-26T11:29:47.488Z"
+    },
+    "say you won't let go (violin remix)__paul lorenz": {
+      "title": "Say You Won't Let Go (Violin Remix)",
+      "artist": "Paul Lorenz",
+      "chords": null,
+      "lyrics": {
+        "available": false,
+        "preview": null,
+        "sourceUrl": "https://www.google.com/search?q=Paul%20Lorenz%20Say%20You%20Won't%20Let%20Go%20(Violin%20Remix)%20lyrics"
+      },
+      "links": {
+        "searchUrl": "https://www.google.com/search?q=Paul%20Lorenz%20Say%20You%20Won't%20Let%20Go%20(Violin%20Remix)%20chords",
+        "ultimateGuitarSearchUrl": "https://www.ultimate-guitar.com/search.php?search_type=title&value=Say%20You%20Won't%20Let%20Go%20(Violin%20Remix)"
+      },
+      "updatedAt": "2026-03-26T11:55:55.582Z"
     }
   },
   "fingerprints": {
@@ -192,6 +307,17 @@
     "b4197c9d1f34e5bb1bea9897720cde1f1bcc0998": "she will be loved (radio edit)__maroon 5",
     "d68bf3296a3492cd2309233041499b889afa9b03": "can't help falling in love__elvis presley",
     "25dea19cc7668fabd13b84fd76134712e7be8c9f": "the a team__ed sheeran",
-    "5f8ebc5b49e12de84fc819e3c36a83d65549657c": "stairway to heaven__led zeppelin"
+    "5f8ebc5b49e12de84fc819e3c36a83d65549657c": "stairway to heaven__led zeppelin",
+    "28eeaf86373b684bf3bdb493e47005a31a64e0c6": "hotel california__eagles",
+    "314f6f3b35a8dcedeb896f667ddacf319c320f18": "the a team__ed sheeran",
+    "4d42d2cf4aec3bc363919d05a59a0298909892a7": "here comes the sun__the beatles",
+    "daba22e5c45361e0e9488704a61c6f97abe86fef": "let it be__the beatles",
+    "7b9fb43e62c04f91273331881cf51495f42ca6c1": "say you won't let go__james arthur",
+    "a8f1b761cc6d57865c12a0f5da6d345057f00a3b": "let it go__passenger",
+    "fc827b6c7a7512fc985c4c2dc35a58fe2c03153c": "waves__dean lewis",
+    "9c9592f9a0e606bf822837bae0eea601513f4a50": "let it go__passenger",
+    "fe5820a609511d4d0eab38a55b7600aa1b4412c7": "say you won't let go (violin remix)__paul lorenz",
+    "788a71dd815734658d1f610bb99661331c4182fc": "say you won't let go__james arthur",
+    "bad44f26cabb0f79404e670eb9cc2e6328959962": "wonderwall__oasis"
   }
 }

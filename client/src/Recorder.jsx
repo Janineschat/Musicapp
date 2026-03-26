@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 
-const Recorder = ({ onAudioReady, isProcessing }) => {
+const Recorder = ({ onAudioReady, isProcessing, onRecognize }) => {
   const [isRecording, setIsRecording] = useState(false);
   const [audioBlob, setAudioBlob] = useState(null);
   const [audioUrl, setAudioUrl] = useState(null);
@@ -111,70 +111,84 @@ const Recorder = ({ onAudioReady, isProcessing }) => {
     }
   };
 
+  // Handle main recording button click
+  const handleMainButtonClick = async () => {
+    if (!isRecording) {
+      // Start recording
+      await startRecording();
+    } else {
+      // Stop recording and auto-trigger recognition
+      stopRecording();
+      // Give a small delay for state update
+      setTimeout(() => {
+        onRecognize?.();
+      }, 500);
+    }
+  };
+
   return (
-    <div className="bg-gray-800 rounded-lg p-6 w-full max-w-md">
-      <h2 className="text-xl font-bold text-white mb-4">
-        Record or Upload Audio
-      </h2>
-
-      {/* Recording Controls */}
-      <div className="mb-4">
-        <div className="flex space-x-2 mb-4">
-          {!isRecording ? (
-            <button
-              onClick={startRecording}
-              disabled={isProcessing}
-              className="flex-1 bg-red-600 hover:bg-red-700 disabled:bg-gray-600 text-white py-2 px-4 rounded-lg font-semibold transition-colors"
-            >
-              🎤 Start Recording
-            </button>
-          ) : (
-            <button
-              onClick={stopRecording}
-              className="flex-1 bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-lg font-semibold transition-colors"
-            >
-              ⏹️ Stop Recording
-            </button>
-          )}
-        </div>
-
-        {/* File Upload */}
-        <div className="mb-4">
-          <label className="block text-sm text-gray-300 mb-2">
-            Or upload an audio file:
-          </label>
-          <input
-            type="file"
-            accept="audio/*"
-            onChange={handleFileUpload}
-            disabled={isProcessing}
-            className="w-full text-sm text-gray-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700"
-          />
-        </div>
-      </div>
-
-      {/* Audio Preview */}
-      {audioUrl && (
-        <div className="mb-4">
-          <label className="block text-sm text-gray-300 mb-2">
-            Audio Preview:
-          </label>
-          <audio controls src={audioUrl} className="w-full" />
-        </div>
-      )}
-
-      {/* Reset Button */}
-      {(audioBlob || audioUrl) && (
+    <div className="flex flex-col items-center space-y-6 w-full">
+      {/* Main Circular Recognition Button */}
+      <div className="flex flex-col items-center space-y-6 mt-6">
         <button
-          onClick={reset}
+          onClick={handleMainButtonClick}
           disabled={isProcessing}
-          className="w-full bg-gray-600 hover:bg-gray-700 disabled:bg-gray-500 text-white py-2 px-4 rounded-lg font-semibold transition-colors"
+          className={`recognize-button bg-[#e3ede1] hover:bg-[#d2e3d0] border border-[#b7cbb2] rounded-full w-36 h-36 flex items-center justify-center transition-all duration-300 ${isProcessing ? 'animate-spin' : 'float-animation'}`}
+          title={isRecording ? "Stop Recording" : "Start Recording"}
         >
-          🔄 Reset
+          <div className="button-content">
+            {isRecording ? (
+              <div className="animate-pulse">
+                <svg
+                  className="w-16 h-16 text-red-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <circle cx="10" cy="10" r="6" />
+                </svg>
+              </div>
+            ) : isProcessing ? (
+              <div className="animate-spin">
+                <svg
+                  className="w-16 h-16 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M2 11a1 1 0 011-1h2.586L9.707 6.293a1 1 0 111.414 1.414L7.414 11l3.707 3.707a1 1 0 01-1.414 1.414L6.586 12H3a1 1 0 01-1-1z" />
+                </svg>
+              </div>
+            ) : (
+              <svg
+                className="w-14 h-14 text-[#2d3a2e] float-animation"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {/* Music note icon */}
+                <path d="M12 3v9.28c-.47-.46-1.12-.75-1.84-.75-2.22 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+              </svg>
+            )}
+          </div>
         </button>
-      )}
+
+        <p className="text-blue-200 text-sm h-6 text-center">
+          {isRecording && "🔴 Recording... (Click to stop)"}
+          {isProcessing && "🔍 Recognizing..."}
+          {!isRecording && !isProcessing && "Click to record"}
+        </p>
+      </div>
     </div>
   );
 };
+
+
+// Zweef-animatie
+// Voeg deze CSS toe aan je globale stylesheet als hij nog niet bestaat:
+// .float-animation {
+//   animation: float 2.5s ease-in-out infinite;
+// }
+// @keyframes float {
+//   0%, 100% { transform: translateY(0); }
+//   50% { transform: translateY(-16px); }
+// }
 
 export default Recorder;

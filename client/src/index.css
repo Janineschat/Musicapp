@@ -9,11 +9,72 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0f0f0f;
-  color: #ffffff;
+  background-color: #f6f7f1; /* Updated to a light natural tint */
+  color: #2d3a2e; /* Darker text color */
+}
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(120deg, #f6f7f1 60%, #e3ede1 100%);
+  color: #2d3a2e;
 }
 
 code {
   font-family:
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+code {
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+}
+
+.main-container {
+  background: #ffffffcc;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 24px 0 #b7cbb2cc;
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.minimal-list {
+  background: #f6f7f1;
+  border-radius: 1rem;
+  box-shadow: 0 1px 8px 0 #b7cbb233;
+  border: 1px solid #e3ede1;
+}
+
+.minimal-list li button {
+  color: #2d3a2e;
+  background: transparent;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.1rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: background 0.2s;
+}
+.minimal-list li button:hover {
+  background: #e3ede1;
+}
+
+/* Zweef-animatie voor de muzieknoot-knop */
+.float-animation {
+  animation: float 2.5s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjusted for a softer animation */
+  }
+}
+
+/* Minimalistische zweef-animatie */
+.float-animation {
+  animation: float 2.5s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
