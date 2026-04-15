@@ -59,6 +59,8 @@ function App() {
           {/* Recorder Component */}
           <Recorder onAudioReady={handleAudioReady} isProcessing={isLoading} />
 
+
+            {/* Gebruik een disabled style met visuele feedback (bijv. opacity of cursor) zodat duidelijker is dat de knop niet klikbaar is. */}
           {/* Recognize Button */}
           <button
             onClick={handleRecognizeSong}
