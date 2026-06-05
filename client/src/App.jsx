@@ -92,3 +92,12 @@ function App() {
 }
 
 export default App;
+
+Codereview Musicapp - Lars Gruppelaar
+Positief:
+De code is goed opgebouwd en overzichtelijk. Alles is netjes opgesplitst in losse componenten zoals Recorder en ResultModal, waardoor de code makkelijk te lezen is. Ook is er goede foutafhandeling aanwezig met een try/catch blok, en wordt de gebruiker netjes op de hoogte gehouden met een foutmelding als er iets misgaat. De loading state is ook goed uitgewerkt, de knop verandert van tekst terwijl het laden bezig is.
+Verbeterpunten:
+De knop wordt wel uitgeschakeld als er geen audio is maar je ziet niet echt waarom. Een klein tekstje zoals "Neem eerst audio op" zou de gebruiker duidelijker helpen. Er staat wel een opmerking in de code over de disabled styling maar die is nog niet uitgewerkt.
+Verder zou het fijn zijn als er een bevestiging komt als de opname gelukt is, zodat je als gebruiker zeker weet dat er iets opgenomen is voordat je op de knop drukt.
+
+  In het vervolg misschien voor de netheid even de notities van AI uit je code halen, ziet er iets professioneler uit. 
